@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Harmony App Project</title>
+</head>
+<body>
+    <header class="header">
+        <img src="Logo.png" alt="Logo" class="logo">
+        <h1>Harmony App Project</h1>
+        <p>Connecting patients with their doctors for mental health support</p>
+    </header>
+
+    <main class="container">
+         <!-- Project Details Section -->
+         <section class="project-details">
+            <h2>Project Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Conceptualized, designed, and developed the Harmony mobile application to enhance mental health support by connecting patients with their doctors.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <p>Developed a secure Login and Signup System for patients and doctors, ensuring data privacy.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tasks"></i>
+                    <p>Created and managed the Self-Regulation and Management (SRM) section, enabling doctor-controlled patient activities and progress tracking.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-comments"></i>
+                    <p>Engineered a GPT-3.5-based Chatbot for 24/7 patient communication, providing tailored mental health support.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-smile"></i>
+                    <p>Implemented a Mood Measurement functionality, allowing users to effectively track mood fluctuations.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-alt"></i>
+                    <p>Developed a Daily Report feature for detailed insights into patient progress and activities.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Designed Mood Charts to visualize emotional trends over time for both patients and doctors.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <p>Pioneered a Stability Chart for doctors to assess patient stability using numerical mood data.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <p>Integrated Fitbit API to extract vital health metrics such as sleep hours, heart rate, and more for comprehensive patient analysis.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-md"></i>
+                    <p>Created a user-friendly interface for doctors to access detailed Daily Reports, SRM data, and patient records.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-database"></i>
+                    <p>Managed and implemented Firebase backend for seamless functionality and real-time updates.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <p>Developed an Automatic Login System to enhance user convenience while maintaining robust security measures.</p>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Project Gallery</h2>
+            <div class="image-grid">
+                    <img src="splash.jpeg" alt="Splash" class="gallery-image" onclick="openModal(this)">
+                    <img src="patient_singup.jpeg" alt="Patient Signup" class="gallery-image" onclick="openModal(this)">
+                    <img src="patient_login.jpeg" alt="Patient Login" class="gallery-image" onclick="openModal(this)">
+                    <img src="Patient_Home.jpeg" alt="Patient Home" class="gallery-image" onclick="openModal(this)">
+                    <img src="report_rules.jpeg" alt="Report Rules" class="gallery-image" onclick="openModal(this)">
+                    <img src="daily_report1.jpeg" alt="Daily Report 1" class="gallery-image" onclick="openModal(this)">
+                    <img src="daily_report2.jpeg" alt="Daily Report 2" class="gallery-image" onclick="openModal(this)">
+                    <img src="chat_BOT.jpeg" alt="Chat Bot" class="gallery-image" onclick="openModal(this)">
+                    <img src="home_doctor.jpeg" alt="Home Doctor" class="gallery-image" onclick="openModal(this)">
+                    <img src="patient_details_page.jpeg" alt="Patient Details Page" class="gallery-image" onclick="openModal(this)">
+                    <img src="ALL_SRM.jpeg" alt="SRM" class="gallery-image" onclick="openModal(this)">
+                    <img src="REPORT_info2.jpeg" alt="Report Info 2" class="gallery-image" onclick="openModal(this)">
+                    <img src="REPORT_info1.jpeg" alt="Report Info 1" class="gallery-image" onclick="openModal(this)">
+                    <img src="FIT_BIT_APP.jpeg" alt="FitBit App" class="gallery-image" onclick="openModal(this)">
+                    <img src="fit_connection_page.jpeg" alt="Fit Connection Page" class="gallery-image" onclick="openModal(this)">
+                    <img src="temperature_Skin_Chart.jpeg" alt="Temperature Skin Chart" class="gallery-image" onclick="openModal(this)">
+                    <img src="Sleep_chart.jpeg" alt="Sleep Chart" class="gallery-image" onclick="openModal(this)">
+            </div>
+        </section>
+
+       
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+        <button class="nav-button" id="prevBtn" onclick="changeImage(-1)">&#10094;</button> <!-- Previous Button -->
+        <button class="nav-button" id="nextBtn" onclick="changeImage(1)">&#10095;</button> <!-- Next Button -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
