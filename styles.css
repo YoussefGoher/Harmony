@@ -158,29 +158,55 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
     color: white;
     border: none;
-    padding: 15px;
+    border-radius: 50%; /* Make the buttons circular */
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    display: flex; /* Use flexbox for centering the icon */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
     cursor: pointer;
     z-index: 1001; /* Sit on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 #prevBtn {
-    left: 20px; /* Positioning the previous button */
+    left: 10px; /* Adjust position for mobile */
 }
 
 #nextBtn {
-    right: 20px; /* Positioning the next button */
+    right: 10px; /* Adjust position for mobile */
 }
 
 .nav-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover for better feedback */
+}
+
+@media (max-width: 600px) {
+    .nav-button {
+        width: 45px; /* Adjust size for mobile */
+        height: 45px; /* Adjust size for mobile */
+    }
 }
 
 #caption {
     text-align: center; /* Center the caption text */
     color: white; /* Change color to make it visible on dark background */
     margin-top: 10px; /* Space between the image and caption */
-    font-size: 1.2em; /* Adjust font size if needed */
+    font-size: 1.2em; /* Base font size */
+    padding: 10px; /* Add padding for better touch target */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better contrast */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    transition: font-size 0.3s; /* Smooth transition for font size change */
+}
+
+@media (max-width: 600px) {
+    #caption {
+        font-size: 1.0em; /* Slightly smaller font size for mobile */
+        padding: 8px; /* Adjust padding for mobile */
+    }
 }
