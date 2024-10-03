@@ -104,7 +104,13 @@ body {
     .gallery-image {
         height: 350px; /* Smaller height for mobile devices */
     }
+
+    #caption {
+        font-size: 1em; /* Smaller font size for mobile */
+        margin-top: 5px; /* Reduced margin for mobile */
+    }
 }
+
 .project-details {
     background-color: #fff; /* White background for contrast */
     padding: 20px;
@@ -147,6 +153,7 @@ body {
     display: inline; /* Keep text inline with icon */
     vertical-align: middle; /* Align with icon */
 }
+
 .nav-button {
     position: absolute;
     top: 50%;
@@ -170,6 +177,7 @@ body {
 .nav-button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 #caption {
     text-align: center; /* Center the caption text */
     color: white; /* Change color to make it visible on dark background */
